@@ -1,0 +1,465 @@
+<div class="" tabindex=""><style type="text/css" id="static">
+    @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800');
+
+    html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;vertical-align:baseline;background:transparent}
+    body{background:#FFF;line-height:1;text-align:left;font-feature-settings:"liga" 0;-moz-font-feature-settings:"liga" off}
+
+    /*Helping Class*/
+    .skn-m001 .txt-bold{font-weight:bold}
+    .skn-m001 .txt-italic{font-style:italic}
+    .skn-m001 .disp-flx{display:flex}
+    
+    /*START Image treatment for LI*/
+    .skn-m001 ul,.skn-m001 li{margin:0;padding:0}
+    .skn-m001 .section:not(.graph-sec) p + ul{margin-top:6px}
+    .skn-m001 ul li{margin:0 0 5px 0;padding-left:16px;list-style:none;position:relative}
+    .skn-m001 ul li:last-child{margin-bottom:0;padding-bottom:0}
+    .skn-m001 .hide-bar:not(.skli-sec) .paragraph .fld-txt{padding-left:15px;margin:0}
+    .skn-m001 ul li:before,.skn-m001 .hide-bar:not(.skli-sec) .paragraph .fld-txt:before{content:" ";position:absolute;left:0;top:0;height:4px;width:4px;border-radius:50%;background:#98c64d}
+    /*END Image treatment for LI*/
+
+    .skn-m001 .educsprtr + .educsprtr{display:none}
+    .skn-m001 span.paddedline{display:block}
+    .skn-m001{color:#000;background-color:#FFF!important;border-top:20px solid #98c64d;word-wrap:break-word;min-height:792px}
+    .skn-m001 .name{font-weight:600;font-size:24px;line-height:24px;padding:0;text-align:center;color:#98c64d}
+    .skn-m001 .sectiontitle{border-bottom:1px solid #98c64d;color:#98c64d}
+    .skn-m001 .section.name-sec,.skn-m001 .section.cntc-sec,.skn-m001 .section.cntc-sec + .section, .skn-m001 .heading + .paragraph,.skn-m001 .sign .paragraph{margin-top:0}
+    .skn-m001 .heading,.skn-m001 .resume-title{clear:both;font-weight:700;text-align:center}
+    .skn-m001 .summ-sec{padding-bottom:11px}
+
+    /* Contact style */
+    .skn-m001 .address{position:relative;text-align:center;margin:0;color:#98c64d}
+    .skn-m001 .address .adrs-fld{flex-wrap:wrap;justify-content:start;column-gap:15px}
+    .skn-m001 .address .adrs-fld > span{width:31.18%;text-align:center;word-break:break-all}
+    .skn-m001 .address .adrs-fld > span:nth-child(3n){text-align:right;flex:1 1 30%}
+    .skn-m001 .address .adrs-fld > span:nth-of-type(3n + 1),.skn-m001 .address .adrs-fld:first-child{text-align:left}
+    .skn-m001 .adrs-fld > span:empty{display:none}
+
+    /*Skill section*/
+    .skn-m001 .skill{display:table;width:100%;table-layout:fixed}
+    .skn-m001 .skill .skc1 + .skc2{margin-top:5px}
+    .skn-m001 .skill .paddedline{display:table-cell;width:50%}
+    .skn-m001 .skill .paddedline:empty{display:none}
+    .skn-m001 .skill .paddedline:empty + .paddedline{padding-left:0}
+    
+    /*Infographic*/
+    /* .skn-m001 .graph-sec .singlecolumn{display:none;width:100%} */
+    .skn-m001 .graph-sec{display:block}
+    /* .skn-m001 .graph-sec .field *,.skn-m001 .graph-sec .nativeLangPara .field{display:inline}  */
+    .skn-m001 .graph-sec .paragraph{display:inline-block;vertical-align:top;padding-bottom:5px;margin:0!important;width:45.7%}
+    .skn-m001 .graph-sec .singlecolumn{margin-left:0!important;padding-left:0;position:relative;width:auto}
+    .skn-m001 .graph-sec .inner-rating{position:relative;width:60%}
+    .skn-m001 .graph-sec .paragraph:before{display:none}
+    .skn-m001 .graph-sec > .paragraph:nth-last-child(1),.skn-m001 .graph-sec > .paragraph:nth-last-child(2){padding-bottom:0}
+    .skn-m001 .graph-sec.disp-flx{display:flex;align-items:start;flex-wrap:wrap;justify-content:space-between}
+    .skn-m001 .graph-sec .fld-txt{margin-right:15px;width:100px;flex-grow:1}
+    .skn-m001 .graph-sec .fld-txt:last-child{margin-right:0}
+    .skn-m001 .graph-sec .paragraph .disp-flx{display:flex;align-items:start}
+    .skn-m001 .graph-sec .rating-bar{width:calc(100% - 115px)}
+    .skn-m001 .graph-sec .heading{width:100%}
+    .skn-m001 .graph-sec .nativeLangPara{display:none}
+
+    /*Infographic - Hide-bar*/
+    .skn-m001 .hide-bar .rating-bar{display:none}
+    .skn-m001 .hide-bar .paragraph{width:100%}
+    .skn-m001 .graph-sec.hide-bar .paragraph:nth-last-child(2){padding-bottom:5px;}
+    .skn-m001 .hide-bar .paragraph .fld-txt{flex:1}
+    
+    /* Experience */
+    .skn-m001 .job-position{display:table;table-layout:fixed;width:100%;margin-bottom:6px}
+    .skn-m001 .job-details,.skn-m001 .job-date{display:table-cell}
+    .skn-m001 .job-date{text-align:right;width:50%;box-sizing:border-box}
+
+    /* Education */
+    .skn-m001 .date-space{padding-left:10px}
+    .skn-m001 .degree, .skn-m001 .degree + .txt-bold, .skn-m001 .programline{color:#98c64d}
+
+
+    .skn-m001 .displayNoneThisField{display:none}/* Keep this class always at bottom */
+
+    /* Builder fixes */
+    .skn-m001 .data-LNGG .doc-item,.skn-m001 .data-SKLI .doc-item,.skn-m001 .data-SFTR .doc-item{width:100%}
+    .skn-m001 .graph-sec:not(.hide-bar) .sortableInner{display:flex;flex-wrap:wrap;justify-content:space-between}
+    .skn-m001 .graph-sec:not(.hide-bar) .sortableInner .sortable-item{width:46.5%}
+    .skn-m001 .graph-sec:not(.hide-bar) .sortableInner > .sortable-item:nth-last-child(1) .paragraph,.skn-m001 .graph-sec:not(.hide-bar) .sortableInner > .sortable-item:nth-last-child(2) .paragraph{padding-bottom:0}
+    .skn-m001 .graph-sec:not(.hide-bar) .sortableInner .sortable-item .paragraph,.skn-m001 .data-LNGG .doc-item,.skn-m001 .data-SKLI .doc-item,.skn-m001 .data-SFTR .doc-item,.skn-m001 .graph-sec.hide-bar .sortableInner > .sortable-item{width:100%}
+
+    /*PDF Issue Fixes*/
+    .skn-m001.for-pdf .address .adrs-fld > span:nth-child(3n){flex-grow:0;flex-basis:auto}
+    .skn-m001.for-pdf .address .adrs-fld{column-gap:normal}
+    .skn-m001.for-pdf .address .adrs-fld > span{margin-right:15px}
+    .skn-m001.for-pdf .address .adrs-fld > span:nth-child(3n){margin-right:0}
+    .skn-m001.for-pdf{min-height:auto}
+
+    /*PDF - Gecko Fixes*/
+    .skn-m001.for-pdf .graph-sec .rating-bar{height:8px}
+    .skn-m001.for-pdf .graph-sec .paragraph .disp-flx,.skn-m001.for-pdf .graph-sec.disp-flx,.skn-m001.for-pdf .pdfinfwrapper{display:block}
+    .skn-m001.for-pdf .graph-sec .fld-txt{display:block;float:left}
+    .skn-m001.for-pdf .graph-sec .rating-bar{display:block;float:right}
+    .skn-m001.for-pdf .graph-sec.hide-bar .rating-bar{display:none}
+    .skn-m001.for-pdf .graph-sec .paragraph .disp-flx,.skn-m001.for-pdf .pdfinfwrapper{overflow:auto;page-break-inside:avoid}
+    .skn-m001.for-pdf .graph-sec .paragraph .disp-flx:after,.skn-m001.for-pdf .pdfinfwrapper:after{content:'';clear:both;display:table}
+    .skn-m001.for-pdf .pdfinfwrapper .paragraph:first-child{float:left}
+    .skn-m001.for-pdf .pdfinfwrapper .paragraph:nth-child(2){float:right}
+    .skn-m001.for-pdf .pdfinfwrapper .paragraph{margin-bottom:10pt}
+    .skn-m001.for-pdf .pdfinfwrapper:last-child .paragraph{margin-bottom:0}
+    .skn-m001.for-pdf .graph-sec .fld-txt:first-child:last-child,.skn-m001.for-pdf .graph-sec.hide-bar .fld-txt{width:100%}
+
+    .skn-m001 .pdet-sec .singlecolumn{display:flex;justify-content:space-between;flex-wrap:wrap}
+    .skn-m001 .pdet-sec .details-wrap{width:49%;margin-bottom:5px}
+    .skn-m001 .pdet-sec .details-wrap:last-child,.skn-m001 .pdet-sec .details-wrap:nth-last-child(2){margin-bottom:0}
+
+    </style><style type="text/css" id="dynamic" data-time="Thu Jan 09 2025 10:20:12 GMT+0530 (India Standard Time)">
+    .skn-m001{line-height:11px;width:451px;font-size:11px;font-family:EB Garamond;padding-top:42px;padding-bottom:24px;padding-left:72px;padding-right:72px;border-top:20px solid #2cd87a}
+    .skn-m001 .section{margin-top:24px}
+    .skn-m001 .paragraph:not(.firstparagraph){margin-top:12px}
+    .skn-m001 .name{font-size:24px;color:#2cd87a;line-height:24px;margin-bottom:4px}
+    .skn-m001 .address,.skn-m001 a{color:#2cd87a;text-decoration:none}
+    .skn-m001 .address .adrs-fld{margin-top:6px;column-gap:15px}
+    .skn-m001 .address .adrs-fld > span{padding-top:6px}
+    .skn-m001 .resume-title{font-size:14px;line-height:14px;margin-bottom:6px}
+    .skn-m001 .cntc-sec{border-bottom:3px solid #2cd87a;padding-bottom:6px;margin-bottom:12px}
+    .skn-m001 .sectiontitle{font-size:16px;color:#2cd87a;line-height:16px;margin-bottom:12px;padding-bottom:6px;border-color:#2cd87a}
+    .skn-m001 .exp-fields{color:#2cd87a}
+    .skn-m001 .job-date{padding-left:50px}
+    .skn-m001 .job-title{margin-bottom:3px}
+    .skn-m001 .space-t3{margin-top:3px}
+    .skn-m001 .frfm-txt{margin-top:8px}
+    .skn-m001 .summ-sec{padding-bottom:11px}
+    .skn-m001 .section:not(.graph-sec) p + ul{margin-top:6px}
+    .skn-m001 ul li{margin-bottom:5px;padding-left:{$R016}px}
+    .skn-m001 .hide-bar:not(.skli-sec) .paragraph .fld-txt{padding-left:15px}
+    .skn-m001 .graph-sec.hide-bar .paragraph:nth-last-child(2){padding-bottom:5px;}
+    .skn-m001 ul li:before,.skn-m001 .hide-bar:not(.skli-sec) .paragraph .fld-txt:before{background:#2cd87a;width:4px;height:4px;top:3px}
+    .skn-m001 .skill .skc1 + .skc2{margin-top:5px}
+
+    /* Education */
+    .skn-m001 .date-space{padding-left:6px}
+    .skn-m001 .degree, .skn-m001 .degree + .txt-bold, .skn-m001 .programline{color:#2cd87a}
+
+    /*Infographic*/
+    .skn-m001 .graph-sec .rating-bar{border:1px solid #2cd87a;margin-top:1px}
+    .skn-m001 .graph-sec .inner-rating{background-color:#2cd87a;height:9px}
+    .skn-m001 .inner-rating{background-color:#2cd87a}
+    .skn-m001 .graph-sec .fld-txt{margin-right:15px}
+
+    /*PDF Issue Fixes*/
+    .skn-m001.for-pdf .address .adrs-fld > span:nth-child(3n){width:135pt}
+    .skn-m001.for-pdf .summ-sec{line-height:11px}
+
+    /*PDF - Gecko Fixes*/
+    .skn-m001.for-pdf .graph-sec .fld-txt,.skn-m005.for-pdf .graph-sec .rating-bar{width:93px}
+
+    /* PDF PDET Fixes */
+    .skn-m001.for-pdf .pdet-sec .paragraph{display:block}
+    .skn-m001.for-pdf .pdet-sec .singlecolumn{display:block;}
+    .skn-m001.for-pdf .pdet-sec .pdfpdwrapper:after{content:'';clear:both;display:table;}
+    .skn-m001.for-pdf .pdfpdwrapper .details-wrap:first-child{float:left;padding-right:5px}
+    .skn-m001.for-pdf .pdfpdwrapper .details-wrap:nth-child(2){float:right}
+    .skn-m001.for-pdf .pdfpdwrapper .details-wrap{width:220px!important;padding-bottom:5px!important;}
+
+    </style><div data-photo-skin="" class="document fontsize fontface vmargins hmargins undefined    pagesize skn-m001 M001   RBL"><div data-id="CONTAINER_PARENT_0" class="parentContainer"><div data-id="CONTAINER_0" class=""><div data-id="SECTION_NAME14c32ac4-ee35-4f75-bccc-84053ca607e0" class="section name-sec notdraggable SECTION_NAME       
+         " data-section-cd="NAME"><div data-id="PARAGRAPH_NAME_85c1a7ab-fb5d-435e-af70-031340cc8f69" class="paragraph PARAGRAPH_NAME firstparagraph  "><div>
+                        <div class="name">
+                            <span data-id="FIELD_FNAM">YASH</span>
+                            <span></span>
+                            <span data-id="FIELD_LNAM">KAUSHIK</span>
+                        </div>
+                        
+                    </div></div></div><div data-id="SECTION_CNTCd3ebb4f7-a614-484a-938f-ba298244c0ff" class="section cntc-sec notdraggable SECTION_CNTC       
+         " data-section-cd="CNTC"><div data-id="PARAGRAPH_CNTC_ad3ebf13-b914-40e4-ab39-49888defbfd0" class="paragraph PARAGRAPH_CNTC firstparagraph  "><div class="clearfix doc-item">
+                        <div class="address">
+                            <span data-id="FIELD_STRT"></span>
+                            <span data-id="FIELD_CITY"></span>
+                            <span data-id="FIELD_STAT"></span>
+                            <span data-id="FIELD_ZIPC"></span>
+                            <span data-id="FIELD_ADDR">Haryana</span>
+                            <div class="adrs-fld disp-flx">
+                                <span>
+                                    <span data-id="FIELD_HPHN">+91 9410229148</span>
+                                    
+                                    
+                                </span>
+                                <span data-id="FIELD_EMAI">yashkaushik955@gmail.com</span>
+                                
+                            </div>
+                        </div>
+                    </div></div></div><div data-id="SECTION_SUMMe9ff8a2d-c4e1-4bc1-8e89-fa1f5a545da5" class="section summ-sec txt-bold notdraggable SECTION_SUMM       
+         " data-section-cd="SUMM"><div data-id="PARAGRAPH_SUMM_7a313137-a618-4f16-910f-589906e92ccb" class="paragraph PARAGRAPH_SUMM firstparagraph  "><div class="clearfix doc-item">
+                        <div class="singlecolumn" data-id="FIELD_FRFM"><p>  Seeking a challenging entry-level position in a progressive organization that values skills in Java, C++, and database management. Dedicated to making a meaningful contribution to company growth and success. Eager to apply technical expertise and passion for problem-solving to drive innovation and achieve exceptional results. Committed to continuous learning and professional development to stay ahead in the ever-evolving field of technology.  </p></div>
+                    </div></div></div></div><div data-id="CONTAINER_1" class=""><div data-id="SECTION_ALNK106335db-fb4b-f30b-15c8-dc368000121f" class="section SECTION_ALNK       
+         " data-section-cd="ALNK"><div class="heading"><div class="sectiontitle" data-id="SECTIONNAME_ALNK">Websites, Portfolios, Profiles</div></div><div data-id="PARAGRAPH_ALNK_437690a4-a47b-462c-bfd4-c91a0ddc5377" class="paragraph PARAGRAPH_ALNK firstparagraph  "><div class="clearfix doc-item">
+                        <div class="singlecolumn">
+                            <ul>
+                                <li><span data-id="FIELD_LNK1">https://github.com/yashkaushik9555</span></li>
+                                <li><span data-id="FIELD_LNK2">https://www.linkedin.com/in/yashkaushik-a0b57b230/</span></li>
+                                <li><span data-id="FIELD_LNK3">https://yashkaushik9555.github.io/resume/</span></li>
+                                
+                            </ul>
+                        </div>
+                    </div></div></div><div data-id="SECTION_ACCM2d8b5343-2adc-ee4b-b1ae-34924ffabd98" class="section SECTION_ACCM       
+         " data-section-cd="ACCM"><div class="heading"><div class="sectiontitle" data-id="SECTIONNAME_ACCM">Accomplishments</div></div><div data-id="PARAGRAPH_ACCM_25b01adf-6d91-1daa-8c48-90bc72c23815" class="paragraph PARAGRAPH_ACCM firstparagraph  "><div class="clearfix doc-item">
+                        <div class="singlecolumn" data-id="FIELD_FRFM"><p>  <strong>  Star Performer of the Month  </strong>  </p><ul>    <li>  Recognized for exceptional performance, consistently exceeding targets and contributing to team success through dedication and teamwork.  </li>  <li>  Demonstrated strong leadership, initiative, and commitment to excellence in all assigned tasks.  </li>  </ul><p>  <strong>  2nd Place in Ludo Championship  </strong>  </p><ul>    <li>  Secured 2nd position in a highly competitive Ludo Championship, showcasing strategic thinking, problem-solving, and adaptability.  </li>  <li>  Competed against a wide pool of participants, illustrating resilience and focus under pressure.2nd position in ludo Championship  </li>  </ul></div>
+                    </div></div></div><div data-id="SECTION_SKLI0ef8d323-1957-3622-730a-6c0c81dc9526" class="section graph-sec disp-flx skli-sec infotilesec hide-colon SECTION_SKLI   multi-para    
+         " data-section-cd="SKLI"><div class="heading"><div class="sectiontitle" data-id="SECTIONNAME_SKLI">Skills</div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI firstparagraph para_odd  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>Java</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_even  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>Hibernate</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_odd  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>Spring Tool Suit</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_even  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>Spring Boot</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_odd  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>Spring MVC</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_even  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>Linux</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_odd  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>C++</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_even  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>Python</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_odd  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>VS Code</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_even  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>Bootstrap Studio</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_odd  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>GitHub</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_even  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>Git</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_odd  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>MongoDB</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_even  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>MySQL</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_odd  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>HTML</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_even  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>PHP</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_odd  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>CSS</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_even  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>JQuery</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_odd  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>JavaScript</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_SKLI_b7433f2b-d043-4b8f-bda0-c5e7852d1de6" class="paragraph PARAGRAPH_SKLI para_even  "><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_SKC1"><p></p><ul><li>ReactJs</li></ul><p></p></span>
+                            </div>
+                            
+                        </div>
+                    </div></div></div><div data-id="SECTION_EXPR312fa0be-0447-4b2f-b149-ff8fc37dae3c" class="section expr-sec SECTION_EXPR   multi-para    
+         " data-section-cd="EXPR"><div class="heading"><div class="sectiontitle" data-id="SECTIONNAME_EXPR">Work History</div></div><div data-id="PARAGRAPH_EXPR_39a5149f-9d72-4df2-b0d2-8e981c54ccd9" class="paragraph PARAGRAPH_EXPR firstparagraph  "><div class="clearfix doc-item">
+                        <div class="singlecolumn">
+                            <div class="exp-fields">
+                                <div class="job-title txt-bold" data-id="FIELD_JTIT">Java Developer</div>
+                                <div class="job-position txt-italic">
+                                    <div class="job-details">
+                                        <span data-id="FIELD_COMP">RARR Technologies Pvt. Ltd.</span><span></span><span data-id="FIELD_JCIT"></span><span data-id="FIELD_JSTA"></span><span data-id="FIELD_JCNT"></span><span><span class="sprtr">, </span></span><span data-id="FIELD_JLOC">Faridabad</span><span data-id="FIELD_JCTR"></span>
+                                    </div>
+                                    <div class="job-date"><span format="%B %Y" data-id="FIELD_JSTD">October 2024</span>
+                                        <span>-</span>
+                                        <span format="%B %Y" data-id="FIELD_EDDT">Current</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="jobline" data-id="FIELD_JDES"><ul>    <li>  Actively contributing as a Java developer at RARR TECHNOLOGIES, specializing in Spectra and ERP  </li>  <li>  Collaborating with team members to develop and maintain software solutions, gaining hands-on experience in live project environments  </li>  </ul></div>
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_EXPR_abe8406a-458f-4f91-85cc-8106ea32370c" class="paragraph PARAGRAPH_EXPR  "><div class="clearfix doc-item">
+                        <div class="singlecolumn">
+                            <div class="exp-fields">
+                                <div class="job-title txt-bold" data-id="FIELD_JTIT">Java Developer Intern</div>
+                                <div class="job-position txt-italic">
+                                    <div class="job-details">
+                                        <span data-id="FIELD_COMP">RARR Technologies Pvt. Ltd.</span><span></span><span data-id="FIELD_JCIT"></span><span data-id="FIELD_JSTA"></span><span data-id="FIELD_JCNT"></span><span><span class="sprtr">, </span></span><span data-id="FIELD_JLOC">Faridabad</span><span data-id="FIELD_JCTR"></span>
+                                    </div>
+                                    <div class="job-date"><span format="%B %Y" data-id="FIELD_JSTD">March 2024</span>
+                                        <span>-</span>
+                                        <span format="%B %Y" data-id="FIELD_EDDT">September 2024</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="jobline" data-id="FIELD_JDES"><ul>   <li> Completed Java Developer Internship at RARR Technologies Pvt. Ltd., Faridabad </li> </ul></div>
+                        </div>
+                    </div></div></div><div data-id="SECTION_EDUCd4acabae-cfcb-47a6-9642-353ad4d21744" class="section SECTION_EDUC   multi-para    
+         " data-section-cd="EDUC"><div class="heading"><div class="sectiontitle" data-id="SECTIONNAME_EDUC">Education</div></div><div data-id="PARAGRAPH_EDUC_7cf814b2-a8ce-4853-80c5-ca36e4307915" class="paragraph PARAGRAPH_EDUC firstparagraph  "><div class="clearfix doc-item">
+                        <div class="singlecolumn">
+                            <span class="paddedline">
+                                <span class="companyname companyname_educ" data-id="FIELD_SCHO">M.V.N University</span><span><span class="xslt_static_change"> at </span></span>
+                                <span class="joblocation jobcity" data-id="FIELD_SCIT">Palwal, Haryana</span>
+                                <span class="joblocation jobstate" data-id="FIELD_SSTA"></span>
+                                <span class="joblocation jobcountry" data-id="FIELD_SCNT"></span>
+                            </span>
+                            <span class="paddedline space-t3">
+                                <span class="degree txt-bold" data-id="FIELD_DGRE">B. Tech</span><span class="txt-bold xslt_static_change"> in </span><span class="programline txt-bold" data-id="FIELD_STUY">CSE</span><span class="date-space">
+                                    <span class="xslt_static_change displayNoneThisField">Expected in </span>
+                                    <span format="%B %Y" data-id="FIELD_GRYR">December 2024</span>
+                                    <span format="%B %Y" data-id="FIELD_GRST"></span>
+                                    
+                                    <span format="%B %Y" data-id="FIELD_GRED"></span>
+                                    
+                                    <span data-id="FIELD_GRIP"></span>
+                                </span>
+                            </span>
+                            
+                            <div class="frfm-txt" data-id="FIELD_FRFM"><p>  Expected Graduation: 2024  </p></div>
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_EDUC_2f84eabb-d97c-4f7c-a03a-c3556b242b28" class="paragraph PARAGRAPH_EDUC  "><div class="clearfix doc-item">
+                        <div class="singlecolumn">
+                            <span class="paddedline">
+                                <span class="companyname companyname_educ" data-id="FIELD_SCHO">J.C.B Modern Vidya Mandir Sr. Sec School</span><span></span>
+                                <span class="joblocation jobcity" data-id="FIELD_SCIT"></span>
+                                <span class="joblocation jobstate" data-id="FIELD_SSTA"></span>
+                                <span class="joblocation jobcountry" data-id="FIELD_SCNT"></span>
+                            </span>
+                            <span class="paddedline space-t3">
+                                <span class="degree txt-bold" data-id="FIELD_DGRE">12th Education</span><span class="txt-bold xslt_static_change"> in </span><span class="programline txt-bold" data-id="FIELD_STUY">Non Medical With (Bio)</span><span class="date-space">
+                                    <span class="xslt_static_change displayNoneThisField">Expected in </span>
+                                    <span format="%B %Y" data-id="FIELD_GRYR">March 2020</span>
+                                    <span format="%B %Y" data-id="FIELD_GRST"></span>
+                                    
+                                    <span format="%B %Y" data-id="FIELD_GRED"></span>
+                                    
+                                    <span data-id="FIELD_GRIP"></span>
+                                </span>
+                            </span>
+                            
+                            <div class="frfm-txt" data-id="FIELD_FRFM"><p>  GPA: 78.8%  </p></div>
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_EDUC_da51bb4a-3a82-4209-866b-1461ea4fa5ec" class="paragraph PARAGRAPH_EDUC  "><div class="clearfix doc-item">
+                        <div class="singlecolumn">
+                            <span class="paddedline">
+                                <span class="companyname companyname_educ" data-id="FIELD_SCHO">Modern Vidya Mandir Public School</span><span></span>
+                                <span class="joblocation jobcity" data-id="FIELD_SCIT"></span>
+                                <span class="joblocation jobstate" data-id="FIELD_SSTA"></span>
+                                <span class="joblocation jobcountry" data-id="FIELD_SCNT"></span>
+                            </span>
+                            <span class="paddedline space-t3">
+                                <span class="degree txt-bold" data-id="FIELD_DGRE">10th class</span><span class="programline txt-bold" data-id="FIELD_STUY"></span><span class="date-space">
+                                    <span class="xslt_static_change displayNoneThisField">Expected in </span>
+                                    <span format="%B %Y" data-id="FIELD_GRYR">March 2018</span>
+                                    <span format="%B %Y" data-id="FIELD_GRST"></span>
+                                    
+                                    <span format="%B %Y" data-id="FIELD_GRED"></span>
+                                    
+                                    <span data-id="FIELD_GRIP"></span>
+                                </span>
+                            </span>
+                            
+                            <div class="frfm-txt" data-id="FIELD_FRFM"><p>  GPA: 86.6%  </p></div>
+                        </div>
+                    </div></div></div><div data-id="SECTION_CERT0c95e2f3-4aaa-dc06-4ba7-7de2b445636c" class="section SECTION_CERT       
+         " data-section-cd="CERT"><div class="heading"><div class="sectiontitle" data-id="SECTIONNAME_CERT">Certifications</div></div><div data-id="PARAGRAPH_CERT_4e605cb7-1b13-4066-969a-c2cf73092c21" class="paragraph PARAGRAPH_CERT firstparagraph  "><div class="clearfix doc-item">
+                        <div class="singlecolumn" data-id="FIELD_FRFM"><ul>  <li>  Java Basic certificate, Hacker Rank  </li><li>  SQL Basic certificate, Hacker Rank  </li><li>  Qualified TCS NQT-IT, 12/2023, 64%  </li>  </ul></div>
+                    </div></div></div><div data-id="SECTION_LNGG4d8cf9e9-e2fd-a213-8a3e-6ed2cf3e4350" class="section graph-sec disp-flx infotilesec hide-colon SECTION_LNGG       
+         " data-section-cd="LNGG"><div class="heading"><div class="sectiontitle" data-id="SECTIONNAME_LNGG">Languages</div></div><div data-id="PARAGRAPH_LNGG_01e717c7-85fc-4f20-b86b-5aef482128d5" class="paragraph PARAGRAPH_LNGG firstparagraph  para_odd"><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_FRFM">English</span>
+                            </div>
+                            
+                        </div>
+                    </div></div><div data-id="PARAGRAPH_LNGG_ab252faf-f6e0-4725-ad44-dd65d1c6acae" class="paragraph PARAGRAPH_LNGG  para_even"><div class="clearfix doc-item">
+                        <div class="singlecolumn disp-flx">
+                            <div class="field fld-txt">
+                                <span data-id="FIELD_FRFM">Hindi</span>
+                            </div>
+                            
+                        </div>
+                    </div></div></div><div data-id="SECTION_CUST35c8d8d0-8ced-8e41-3fe6-7cc8b21e6ebe" class="section SECTION_CUST       
+         " data-section-cd="CUST"><div class="heading"><div class="sectiontitle" data-id="SECTIONNAME_CUST">Hobbies and Interests</div></div><div data-id="PARAGRAPH_CUST_24d20e61-92e5-4fe3-b4f7-861c7e78cd13" class="paragraph PARAGRAPH_CUST firstparagraph  "><div class="clearfix doc-item">
+                        <div class="singlecolumn" data-id="FIELD_FRFM"><ul> <li> Music: Enjoys listening to music for relaxation and inspiration. </li><li> Sports: Participating in or following sports activities like cricket, basketball, or tennis. </li><li> Yoga/Meditation: Practicing mindfulness and promoting relaxation. </li> </ul></div>
+                    </div></div></div></div></div></div><div></div></div>
